@@ -1,5 +1,6 @@
 window.addEventListener("resize", myFunction);
 window.onload = myFunction();
+
 function myFunction() {
     var max_col_height = 0; // максимальная высота, первоначально 0
     var columns = document.getElementsByClassName("person-data"); // получаем массив колонок (всех элементов класса column)
