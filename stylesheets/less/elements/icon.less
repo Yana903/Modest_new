@@ -1,0 +1,35 @@
+.icon {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .hook-icon()
+}
+
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+svg[class^="icon-"],
+svg[class*=" icon-"] {
+  //display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  .hook-icon-svg()
+}
+
+.hook-icon-misc();
+
+//=========== Hooks
+
+.hook-icon() {}
+.hook-icon-svg() {}
+.hook-icon-misc() {};
